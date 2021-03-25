@@ -14,7 +14,7 @@ for (let i = 2; i < process.argv.length; i++) {
     process.exit(1)
   }
 
-  //check if the value is a file or a directory
+  // check if the value is a file
   const stats = fs.statSync(process.argv[i])
 
   if (!stats.isFile(process.argv[i])) {
