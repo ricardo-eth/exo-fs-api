@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 if (process.argv.length < 3) {
-  console.log(`usage: node cat.js file file file etc`)
+  console.log(`usage: node cat_plus.js file file file etc`)
   process.exit(1) 
 }
 
