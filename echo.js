@@ -3,6 +3,12 @@ if (process.argv.length < 3) {
   process.exit(1)
 }
 
-let expression = process.argv.slice(2).join(' ')
+//let expression = process.argv.slice(2).join(' ')
+//console.log(expression)
 
-console.log(expression)
+// or 
+
+
+let [,, ...expression] = process.argv
+
+console.log(expression.join(' '))
