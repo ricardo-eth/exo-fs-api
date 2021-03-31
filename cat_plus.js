@@ -22,7 +22,7 @@ for (let i = 2; i < process.argv.length; i++) {
     process.exit(1)
   }
 
-  content += fs.readFileSync(process.argv[i], 'utf-8') + ' '
+  content += fs.readFileSync(process.argv[i], 'utf-8') + '\n'
 
 }
 
