@@ -4,7 +4,7 @@ let FILE = process.argv[process.argv.length -1]
 
 let text = fs.readFileSync(FILE, 'utf-8')
 
-if (process.argv.length != 3 && process.argv.length != 4) {
+if (process.argv.length !== 3 && process.argv.length !== 4) {
   console.log(`'usage: node wcV2.js [-l, -w, -c] file.txt`)
   process.exit(1)
 }
