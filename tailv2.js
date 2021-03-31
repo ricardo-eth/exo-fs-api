@@ -4,8 +4,6 @@ let n = 10
 
 lastElement = process.argv[process.argv.length -1]
 
-console.log(typeof Number(lastElement))
-
 if (!fs.existsSync(lastElement)) {
   console.log(`Error: ${lastElement} does not exist`)
   process.exit(1)
